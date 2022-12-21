@@ -1,0 +1,10 @@
+Componentes de Classes x Funcionais
+
+Classes => mais verboso;
+            - Não é mais utilizado;
+            - criado como se fosse uma classe;
+
+Funcionais => mais objetivos;
+            - Utiliza-se funções;
+            
+styled-Components => biblioteca que permite escrever css no js.
