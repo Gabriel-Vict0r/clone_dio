@@ -10,6 +10,7 @@ export const ButtonContainer = styled.button`
     padding: 2px 12px;
     min-width: 120px;
     width: 100%;
+    border: none;
 
     ${({variant}) => variant !== "primary" && css`
         min-width: 167px;
@@ -17,14 +18,20 @@ export const ButtonContainer = styled.button`
 
         background: #E4105d;
 
+        &:hover { 
+            opacity: 0.6;
+            cursor: pointer;
+        }
+
         &&::after { 
-            content: "",
+            content: '';
             position: absolute;
             border: 1px solid #e4105d;
-            top: -5px;
-            left: -6px;
-            width: calc(100%, -10px);
-            height: calc(100% + 10px);
+
+            top: -6px;
+            left: -7px;
+            width: calc(100% + 12px);
+            height: calc(100% + 12px);
             border-radius: 22px;
         }
     `}
